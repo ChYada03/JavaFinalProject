@@ -22,25 +22,25 @@ public class LoveResultA extends JFrame {
     private JPanel contentPane;
     private PointDistribution pointDistribution;
 
-//    public static void main(String[] args) {
-//        EventQueue.invokeLater(new Runnable() {
-//            public void run() {
-//                try {
-//                    PointDistribution pointDistribution = new PointDistribution();
-//                    LoveResultA frame = new LoveResultA(pointDistribution);
-//                    frame.setVisible(true);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        });
-//    }
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    PointDistribution pointDistribution = new PointDistribution();
+                    LoveResultA frame = new LoveResultA(pointDistribution);
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 
     public LoveResultA(PointDistribution pointDistribution) {
         this.pointDistribution = pointDistribution;
         setTitle("Psychology Test");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(100, 100, 960, 540);
+        setBounds(0, 0, 982, 540);
         setLocationRelativeTo(null);
         setVisible(true);
 
@@ -50,7 +50,7 @@ public class LoveResultA extends JFrame {
         contentPane.setLayout(null);
 
         JButton btnYes = new JButton();
-        btnYes.setBounds(328, 444, 117, 49);
+        btnYes.setBounds(327, 454, 117, 49);
         btnYes.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             	pointDistribution.resetPoints();
@@ -59,11 +59,11 @@ public class LoveResultA extends JFrame {
             }
         });
         btnYes.setBorder(null);
-        btnYes.setIcon(new ImageIcon("D:\\JavaFinalProject\\JavaFinalProject\\src\\quizgame\\TryagainYes.png"));
+        btnYes.setIcon(new ImageIcon("src/quizgame/TryagainYes.png"));
         contentPane.add(btnYes);
 
         JButton btnNo = new JButton();
-        btnNo.setBounds(519, 444, 117, 49);
+        btnNo.setBounds(519, 454, 117, 49);
         btnNo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
@@ -71,7 +71,7 @@ public class LoveResultA extends JFrame {
             }
         });
         btnNo.setBorder(null);
-        btnNo.setIcon(new ImageIcon("D:\\JavaFinalProject\\JavaFinalProject\\src\\quizgame\\TryagainNo.png"));
+        btnNo.setIcon(new ImageIcon("src/quizgame/TryagainNo.png"));
         contentPane.add(btnNo);
 
         JLabel lblResult = new JLabel("");
@@ -89,8 +89,8 @@ public class LoveResultA extends JFrame {
         lblResult.setText(totalPoints);
 
         JLabel lblBg = new JLabel();
-        lblBg.setBounds(0, 0, 958, 503);
-        lblBg.setIcon(new ImageIcon("D:\\JavaFinalProject\\JavaFinalProject\\src\\quizgame\\ResultA.png"));
+        lblBg.setBounds(0, 0, 958, 524);
+        lblBg.setIcon(new ImageIcon("src/quizgame/ResultA.png"));
         contentPane.add(lblBg);
     }
 }

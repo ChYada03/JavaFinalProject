@@ -44,44 +44,44 @@ public class Category extends JFrame {
 		setVisible(true);
 		
 		setContentPane(contentPane);
-		contentPane.setLayout(null);
 
-		JButton btnAbbreviate = new JButton();
+		JButton btnAbbreviate = new JButton("");
+		btnAbbreviate.setBounds(756, 53, 65, 53);
 		btnAbbreviate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new Menu();
-				setVisible(false);
 			}
 		});
+		contentPane.setLayout(null);
 		btnAbbreviate.setBorder(null);
-		btnAbbreviate.setIcon(new ImageIcon("D:\\JavaFinalProject\\JavaFinalProject\\src\\quizgame\\-.png"));
-		btnAbbreviate.setBounds(756, 53, 65, 53);
+		btnAbbreviate.setIcon(new ImageIcon("src/quizgame/___.png"));
 		contentPane.add(btnAbbreviate);
 	
-		JButton btnQuit = new JButton();
+		JButton btnQuit = new JButton("");
+		btnQuit.setBounds(829, 53, 58, 53);
 		btnQuit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
 		});
 		btnQuit.setBorder(null);
-		btnQuit.setIcon(new ImageIcon("D:\\JavaFinalProject\\JavaFinalProject\\src\\quizgame\\x.png"));
-		btnQuit.setBounds(829, 53, 58, 53);
+		btnQuit.setIcon(new ImageIcon("src/quizgame/x.png"));
 		contentPane.add(btnQuit);
 		
-		JButton btnPersional = new JButton();
-		btnPersional.addActionListener(new ActionListener() {
+		JButton btnPersonal = new JButton("");
+		btnPersonal.setBounds(113, 323, 733, 64);
+		btnPersonal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			new PerQuestion1();
 			setVisible(false);
 			}
 		});
-		btnPersional.setBorder(null);
-		btnPersional.setIcon(new ImageIcon(Category.class.getResource("/quizgame/p.png")));
-		btnPersional.setBounds(134, 318, 716, 53);
-		contentPane.add(btnPersional);
+		btnPersonal.setBorder(null);
+		btnPersonal.setIcon(new ImageIcon("src/quizgame/btnPerChoice.png"));
+		contentPane.add(btnPersonal);
 		
-		JButton btnLove = new JButton();
+		JButton btnLove = new JButton("");
+		btnLove.setBounds(134, 225, 687, 47);
 		btnLove.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new LoveQuestions1();
@@ -89,16 +89,12 @@ public class Category extends JFrame {
 			}
 		});
 		btnLove.setBorder(null);
-		btnLove.setIcon(new ImageIcon(Category.class.getResource("/quizgame/Love.png")));
-		btnLove.setBounds(134, 229, 687, 47);
+		btnLove.setIcon(new ImageIcon("src/quizgame/btnLoveChoice.png"));
 		contentPane.add(btnLove);
 		
 		JLabel lblBg = new JLabel("");
-		lblBg.setIcon(new ImageIcon(Category.class.getResource("/quizgame/Category.png")));
 		lblBg.setBounds(0, 0, 946, 503);
+		lblBg.setIcon(new ImageIcon("src/quizgame/Category.png"));
 		contentPane.add(lblBg);
-		
-		
 	}
-
 }

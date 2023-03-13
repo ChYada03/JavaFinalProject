@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\aceof\\Desktop\\jgoodies-common-1.8.0.jar",
+        "c:\\Users\\aceof\\Desktop\\jgoodies-forms-1.8.0.jar"
+    ]
+}

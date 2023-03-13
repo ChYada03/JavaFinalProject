@@ -39,7 +39,7 @@ public class LoveQuestions1 extends JFrame {
 	public LoveQuestions1() {
 		setTitle("Psychology Test");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 960, 540);
+		setBounds(100, 100, 960, 582);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setLocationRelativeTo(null);
@@ -57,7 +57,7 @@ public class LoveQuestions1 extends JFrame {
 				setVisible(false);
 			}
 		});
-		A.setIcon(new ImageIcon(LoveQuestions1.class.getResource("/quizgame/A.png")));
+		A.setIcon(new ImageIcon("src/quizgame/A.png"));
 		A.setBounds(232, 251, 56, 57);
 		contentPane.add(A);
 		
@@ -70,7 +70,7 @@ public class LoveQuestions1 extends JFrame {
 				setVisible(false);
 			}
 		});
-		B.setIcon(new ImageIcon(LoveQuestions1.class.getResource("/quizgame/B.png")));
+		B.setIcon(new ImageIcon("src/quizgame/B.png"));
 		B.setBounds(508, 251, 56, 57);
 		contentPane.add(B);
 		
@@ -83,7 +83,7 @@ public class LoveQuestions1 extends JFrame {
 				setVisible(false);
 			}
 		});
-		C.setIcon(new ImageIcon(LoveQuestions1.class.getResource("/quizgame/C.png")));
+		C.setIcon(new ImageIcon("src/quizgame/C.png"));
 		C.setBounds(232, 338, 56, 57);
 		contentPane.add(C);
 		
@@ -96,7 +96,7 @@ public class LoveQuestions1 extends JFrame {
 				setVisible(false);
 			}
 		});
-		D.setIcon(new ImageIcon(LoveQuestions1.class.getResource("/quizgame/D.png")));
+		D.setIcon(new ImageIcon("src/quizgame/D.png"));
 		D.setBounds(508, 338, 56, 57);
 		contentPane.add(D);
 		
@@ -107,13 +107,13 @@ public class LoveQuestions1 extends JFrame {
 				setVisible(false);
 			}
 		});
-		x.setIcon(new ImageIcon(LoveQuestions1.class.getResource("/quizgame/exit.png")));
+		x.setIcon(new ImageIcon("src/quizgame/x.png"));
 		x.setBounds(768, 79, 51, 52);
 		contentPane.add(x);
 
 		JLabel lblBg = new JLabel();
-		lblBg.setIcon(new ImageIcon(LoveQuestions1.class.getResource("/quizgame/LoveQuestion1.png")));
-		lblBg.setBounds(0, 0, 946, 503);
+		lblBg.setIcon(new ImageIcon("src/quizgame/LoveQuestion1.png"));
+		lblBg.setBounds(0, 0, 982, 540);
 		contentPane.add(lblBg);
 		
 	}
